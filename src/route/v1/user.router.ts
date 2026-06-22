@@ -11,5 +11,14 @@ userRouter.get("/", (req: Request, res: Response) => {
 
 })
 
+userRouter.post("/", (req: Request, res: Response) => {
+    
+    res.status(200).json({
+        message: "Hello! ",
+        
+    })
+
+})
+
 
 export default userRouter
