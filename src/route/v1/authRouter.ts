@@ -23,8 +23,5 @@ authRouter.post("/register",(req:Request,res:Response)=>{
 
 })
 
-authRouter.post("/register",()=>{
-    // TODO : signin
-})
 
 export default authRouter
