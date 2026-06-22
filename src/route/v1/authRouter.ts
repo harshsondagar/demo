@@ -7,7 +7,7 @@ authRouter.post("/register",()=>{
 })
 
 authRouter.post("/register",()=>{
-    // TODO : signic 
+    // TODO : signin
 })
 
 export default authRouter
