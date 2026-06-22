@@ -6,8 +6,6 @@ authRouter.post("/register",()=>{
      
 })
 
-authRouter.post("/register",()=>{
 
-})
 
 export default authRouter
