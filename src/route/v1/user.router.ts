@@ -1,8 +1,8 @@
 import router, { Request, Response } from "express"
 
-const authRouter = router()
+const userRouter = router()
 
-authRouter.post("/register", (req: Request, res: Response) => {
+userRouter.post("/register", (req: Request, res: Response) => {
     const {username, password} = req.body
 
     if(!username || !password || password < 6){
@@ -23,4 +23,4 @@ authRouter.post("/register", (req: Request, res: Response) => {
 })
 
 
-export default authRouter
+export default userRouter
