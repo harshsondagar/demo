@@ -8,19 +8,15 @@ userRouter.get("/:id", (req: Request, res: Response) => {
         message: "Hello! welcome to server",
         userId : id
     })
-
-
-
 })
 
 userRouter.post("/", (req: Request, res: Response) => {
     
     res.status(200).json({
-        message: "Hello! ",
-        
-    })
+        message: "Hello! welcome",
+    })   
 
 })
 
 
-export default userRouter
+export default userRouter   
