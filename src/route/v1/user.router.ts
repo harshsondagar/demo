@@ -2,17 +2,18 @@ import router, { Request, Response } from "express"
 
 const userRouter = router()
 
-userRouter.get("/:id", (req: Request, res: Response) => {
-
+userRouter.get("/", (req: Request, res: Response) => {
     res.status(200).json({
-        message: "Hello! welcome to server",
+        message: "Hello! user",
     })
 })
 
 userRouter.post("/", (req: Request, res: Response) => {
     
+    const userMessage = req.body.userMessage;
+
     res.status(200).json({
-        message: "Hello! welcome ",
+        message: `your message : ${userMessage} `,
     })   
 
 })
